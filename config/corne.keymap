@@ -25,16 +25,17 @@
                  &kp LALT &kp LCTRL &kp SPACE   &kp RET &mo 1 &mo 2
                         >;
                 };
+
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     | HOM |  UP | END |     |      |
-// | SHFT |     |     |     |     |     |   |     | LFT | DWN | RGT |     |      |
+// | BTCLR|  F1 |  F2 |  F3 |  F4 |  F5 |   |     | HOM |  UP | END |  -  |   =  |
+// | SHFT |  F6 |  F7 |  F8 |  F9 | F10 |   |     | LFT | DWN | RGT |  \  |      |
 //                    |     |     |     |   |     |     |     |
                         bindings = <
    &kp ESC      &kp N1      &kp N2      &kp N3      &kp N4       &kp N5         &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &trans
-   &kp LCAPS    &kp F1      &kp F2      &kp F3      &kp F4       &kp F5         &trans      &kp HOME    &kp UP      &kp END     &trans      &trans
-   &trans       &kp F6      &kp F7      &kp F8      &kp F9       &kp F10        &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &trans
+   &kp LCAPS    &kp F1      &kp F2      &kp F3      &kp F4       &kp F5         &trans      &kp HOME    &kp UP      &kp END     &kp MINUS   &kp EQUAL
+   &trans       &kp F6      &kp F7      &kp F8      &kp F9       &kp F10        &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &kp BSLH    &trans
                                         &trans      &trans       &trans         &trans      &trans      &trans
                         >;
                 };
