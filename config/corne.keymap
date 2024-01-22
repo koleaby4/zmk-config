@@ -47,10 +47,10 @@
 // |      |     |     |     |     |     |   |     |     |     |     |  #  |      |
 //                    |     |     |     |   |     |     |     |
                         bindings = <
-   &bootloader      &trans      &trans      &kp LG(E)   &trans      &trans          &trans      &trans      &trans      &trans      &trans      &bootloader
-   &bt BT_CLR_ALL   &trans      &kp LG(S)   &kp LG(D)   &kp LBKT    &kp LS(LBKT)    &trans      &trans      &trans      &trans      &trans      &bt BT_CLR_ALL
-   &trans           &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &kp HASH    &trans
-                                            &trans      &trans      &trans          &trans      &trans      &trans
+   &bootloader      &trans      &trans      &kp LG(E)   &trans      &trans          &trans      &trans          &trans          &trans          &trans      &bootloader
+   &bt BT_CLR_ALL   &trans      &kp LG(S)   &kp LG(D)   &kp LBKT    &kp LS(LBKT)    &kp RBKT    &kp LS(RBKT)    &kp LG(UP)      &kp LG(L)       &trans      &bt BT_CLR_ALL
+   &trans           &trans      &trans      &trans      &kp LG(V)   &trans          &trans      &kp LG(LEFT)    &kp LG(DOWN)    &kp LG(RIGHT)   &kp HASH    &trans
+                                            &trans      &trans      &trans          &trans      &trans          &trans
                         >;
                 };
         };
