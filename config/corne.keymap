@@ -29,12 +29,12 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR|  F1 |  F2 |  F3 |  F4 |  F5 |   |     | HOM |  UP | END |  -  |   =  |
-// | SHFT |  F6 |  F7 |  F8 |  F9 | F10 |   |     | LFT | DWN | RGT |  \  |      |
+// |      |  F1 |  F2 |  F3 |  F4 |  F5 |   |     | HOM |  UP | END |  -  |   =  |
+// |      |  F6 |  F7 |  F8 |  F9 | F10 |   |     | LFT | DWN | RGT |  \  |      |
 //                    |     |     |     |   |     |     |     |
                         bindings = <
    &kp ESC      &kp N1      &kp N2      &kp N3      &kp N4       &kp N5         &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &trans
-   &kp LCAPS    &kp F1      &kp F2      &kp F3      &kp F4       &kp F5         &trans      &kp HOME    &kp UP      &kp END     &kp MINUS   &kp EQUAL
+   &kp CAPS     &kp F1      &kp F2      &kp F3      &kp F4       &kp F5         &trans      &kp HOME    &kp UP      &kp END     &kp MINUS   &kp EQUAL
    &trans       &kp F6      &kp F7      &kp F8      &kp F9       &kp F10        &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &kp BSLH    &trans
                                         &trans      &trans       &trans         &trans      &trans      &trans
                         >;
@@ -43,14 +43,14 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |Reset |     |     |     |     |     |   |     |     |     |     |     |Reset |
-// |BT Rst|     |     |     |     |     |   |     |     |     |     |     |BT Rst|
+// |      |     |     |     |     |  {  |   |  }  |     |     |     |     |      |
 // |      |     |     |     |     |     |   |     |     |     |     |  #  |      |
 //                    |     |     |     |   |     |     |     |
                         bindings = <
-   &bootloader      &trans      &trans      &kp LG(E)   &trans      &trans          &trans      &trans          &trans          &trans          &trans      &bootloader
-   &bt BT_CLR_ALL   &trans      &kp LG(S)   &kp LG(D)   &kp LBKT    &kp LS(LBKT)    &kp RBKT    &kp LS(RBKT)    &kp LG(UP)      &kp LG(L)       &trans      &bt BT_CLR_ALL
-   &trans           &trans      &trans      &trans      &kp LG(V)   &trans          &trans      &kp LG(LEFT)    &kp LG(DOWN)    &kp LG(RIGHT)   &kp HASH    &trans
-                                            &trans      &trans      &trans          &trans      &trans          &trans
+   &bootloader      &trans      &trans      &kp LG(E)   &trans      &trans          &trans          &trans          &trans          &trans          &trans      &bootloader
+   &trans           &trans      &kp LG(S)   &kp LG(D)   &kp LBKT    &kp LS(LBKT)    &kp LS(RBKT)    &kp RBKT        &kp LG(UP)      &kp LG(L)       &trans      &trans
+   &trans           &trans      &trans      &trans      &kp LG(V)   &trans          &trans          &kp LG(LEFT)    &kp LG(DOWN)    &kp LG(RIGHT)   &kp HASH    &trans
+                                            &trans      &trans      &trans          &trans          &trans          &trans
                         >;
                 };
         };
