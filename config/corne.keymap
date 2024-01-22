@@ -47,7 +47,7 @@
 // |      |     |     |     |     |     |   |     |     |     |     |  #  |      |
 //                    |     |     |     |   |     |     |     |
                         bindings = <
-   &bootloader      &trans      &trans      &kp LG(E)   &trans      &trans          &trans          &trans          &trans          &trans          &trans      &bootloader
+   &bootloader      &trans      &trans      &kp LG(E)   &trans      &trans          &trans          &trans          &trans          &kp F11         &kp F12     &bootloader
    &trans           &trans      &kp LG(S)   &kp LG(D)   &kp LBKT    &kp LS(LBKT)    &kp LS(RBKT)    &kp RBKT        &kp LG(UP)      &kp LG(L)       &trans      &trans
    &trans           &trans      &trans      &trans      &kp LG(V)   &trans          &trans          &kp LG(LEFT)    &kp LG(DOWN)    &kp LG(RIGHT)   &kp HASH    &trans
                                             &trans      &trans      &trans          &trans          &trans          &trans
